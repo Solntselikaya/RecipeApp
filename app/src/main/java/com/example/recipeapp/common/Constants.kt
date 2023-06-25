@@ -6,4 +6,6 @@ object Constants {
     const val CONNECTION_TIMEOUT: Long = 15
     const val READ_TIMEOUT: Long = 60
     const val WRITE_TIMEOUT: Long = 60
+
+    const val RECIPE_ID: String = "recipeId"
 }
