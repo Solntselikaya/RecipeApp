@@ -7,6 +7,8 @@ import com.example.recipeapp.common.Constants.WRITE_TIMEOUT
 import com.example.recipeapp.data.RecipeApi
 import com.example.recipeapp.data.RecipeRepositoryImpl
 import com.example.recipeapp.domain.RecipeRepository
+import com.example.recipeapp.domain.usecase.GetRecipeDetailsByIdUseCase
+import com.example.recipeapp.domain.usecase.GetRecipeListUseCase
 import com.google.gson.GsonBuilder
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -42,6 +44,8 @@ val appModule = module {
     single <RecipeRepository> { RecipeRepositoryImpl(get()) }
 
     /* UseCases */
+    factory { GetRecipeListUseCase(get()) }
+    factory { GetRecipeDetailsByIdUseCase(get()) }
 
     /* ViewModels */
 
