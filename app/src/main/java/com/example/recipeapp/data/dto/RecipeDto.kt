@@ -4,9 +4,9 @@ import com.example.recipeapp.common.parseDateForUI
 import com.example.recipeapp.domain.model.RecipeModel
 
 data class RecipeDto(
-    val description: String,
+    val description: String? = null,
     val difficulty: String,
-    val images: String,
+    val images: List<String>,
     val instructions: String,
     val lastUpdated: String,
     val name: String,
