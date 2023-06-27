@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">RecipeApp</string>
+    <string name="no_description">No description</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="choose_ordering">Choose ordering</string>
+    <string name="no_order">No order</string>
+    <string name="by_name_ascending">By name ascending</string>
+    <string name="by_name_descending">By name descending</string>
+    <string name="by_date_ascending">By date ascending</string>
+    <string name="by_date_descending">By date descending</string>
 </resources>
